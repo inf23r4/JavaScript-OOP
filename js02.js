@@ -30,3 +30,32 @@ account.withdraw(10)
 account.withdraw(200)
 
 console.log(account.amount)
+
+//Constructor (javaScript OOP)
+
+const user01 = {
+    name: "Ron", //properties
+    lastname: "gui",
+    age: 30,
+    showFullName(){
+        return `${this.name} ${this.lastname}`
+    }
+}
+    //onstrutor
+
+function Person() {
+    this.name = ""
+    this.lastname = ""
+    this.age = 0
+    this.showFullName = function () {
+        return `${this.name} ${this.lastname}`
+    }
+}
+
+const user02 = new Person()
+user02.name = "harry"
+user02.lastname = "potter"
+user02.age = 20
+
+console.log(user02.showFullName())
+
