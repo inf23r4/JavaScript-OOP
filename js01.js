@@ -39,3 +39,28 @@ const user = {
 }
 
 console.log(user)
+
+//Object Properties
+
+const car = {
+    model: "shellby Cobra",
+    color: "blue",
+    cretionYear: 1953,
+    speed: 160,
+    price: 1500000
+}
+console.log(car.model);
+console.log(car.color);
+console.log(car.speed);
+
+
+const count = {
+    number: "40000123456789010",
+    paymentProcessor: "visa",
+    type: "Visa Gold",
+    owner:"g Raymond",
+    amount: 100
+}
+console.log(count.owner)
+console.log(count.type)
+console.log(count.number)
