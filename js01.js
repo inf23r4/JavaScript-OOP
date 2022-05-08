@@ -64,3 +64,18 @@ const count = {
 console.log(count.owner)
 console.log(count.type)
 console.log(count.number)
+
+//Methods (Object Methods)
+
+function showFullName(){
+    return "Ryan Ray"
+}
+
+const userFunction = {
+    name: "ryan", //properties
+    lastname: "ray",
+    age: 30,
+    showFullName: showFullName
+}
+
+console.log(userFunction.showFullName())
