@@ -41,7 +41,7 @@ const user01 = {
         return `${this.name} ${this.lastname}`
     }
 }
-    //onstrutor
+    //construtor
 
 function Person() {
     this.name = ""
@@ -58,4 +58,12 @@ user02.lastname = "potter"
 user02.age = 20
 
 console.log(user02.showFullName())
+
+    //Object() 
+
+const person = new Object()
+console.log(person)
+
+const person02 = {}
+console.log(person02.constructor === Object)
 
