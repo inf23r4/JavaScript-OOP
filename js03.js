@@ -47,6 +47,26 @@ const s = new String("hello word");
 String.prototype.concatTest = function() {
     return this + "test";
 }
-console.log("my nme is jesus".concatTest())
+console.log("my name is jesus".concatTest())
 
-console.log(s.concatTest())
+console.log(s.concatTest());
+
+// class
+
+class PersonClass {
+    constructor(name, lastname){
+        this.name = name
+        this.lastname = lastname
+    }
+    greet() {
+        return `hello! I'am ${this.name} ${this.lastname}`
+    }
+}
+
+
+const user = new PersonClass('joe', 'ray')
+const user02 = new PersonClass('ryan', 'ray')
+
+console.log(user.greet())
+console.log(user02.greet())
+
