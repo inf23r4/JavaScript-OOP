@@ -61,9 +61,24 @@ console.log(user02.showFullName())
 
     //Object() 
 
-const person = new Object()
+const person = new Object(3 * 3)
 console.log(person)
 
 const person02 = {}
 console.log(person02.constructor === Object)
 
+const string = new Object("hello word");
+string.name = "special string"
+string.test = function () {
+    return this + "test"
+}
+console.log(string.name)
+
+const user0 = {
+    name: "ray",
+    lastname: "ray",
+    age: 20,
+    showName(){}
+}
+console.log(Object.keys(user))
+console.log(Object.values(user))
