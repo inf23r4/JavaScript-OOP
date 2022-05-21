@@ -1,5 +1,7 @@
 class Cart {
-    
+    constructor(database){
+        this._database = database
+    }
     create(){
         console.log("create");
     }

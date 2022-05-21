@@ -1,3 +1,4 @@
-let Cart = require("./cart")
+let CartFactory = require("./factory")
 
-new Cart().delete();
+let cart = CartFactory.make();
+cart.delete();
