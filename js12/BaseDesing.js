@@ -4,8 +4,14 @@ class BaseDesing {
     }
 
     next(role){
-        return this._next.run(role);
+        if(this._next){
+            return this._next.run(role);
+        }
+        
+        return `There are not Desing for role ${role}`
     }
+
+   
 }
 
 
